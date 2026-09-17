@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPRR - Sistema de Gestión de Aulas</title>
+  <meta name="description" content="Solución digital para organizar aulas, laboratorios y espacios educativos. Evitá superposiciones y optimizá la capacidad de cada espacio.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#inicio" class="navbar__logo">
+        <span class="navbar__logo-icon">&#9670;</span>
+        CPRR
+      </a>
+      <nav class="navbar__menu" id="nav-menu">
+        <a href="#inicio" class="navbar__link">Inicio</a>
+        <a href="#solucion" class="navbar__link">Solución</a>
+        <a href="#caracteristicas" class="navbar__link">Características</a>
+        <a href="#beneficios" class="navbar__link">Beneficios</a>
+        <a href="#publico" class="navbar__link">Público objetivo</a>
+        <a href="#contacto" class="navbar__link">Contacto</a>
+      </nav>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__container">
+      <div class="hero__content fade-in">
+        <h1 class="hero__title">Gestioná tus aulas de forma <span class="hero__highlight">simple e inteligente</span></h1>
+        <p class="hero__text">Una solución digital para organizar aulas, laboratorios y espacios educativos, evitando superposiciones y optimizando la capacidad de cada espacio.</p>
+        <div class="hero__buttons">
+          <a href="#solucion" class="btn btn--primary">Conocer la solución</a>
+          <a href="#contacto" class="btn btn--secondary">Solicitar información</a>
+        </div>
+      </div>
+      <div class="hero__visual fade-in">
+        <div class="dashboard-mockup">
+          <div class="dashboard-mockup__header">
+            <span class="dashboard-mockup__dot"></span>
+            <span class="dashboard-mockup__dot"></span>
+            <span class="dashboard-mockup__dot"></span>
+            <span class="dashboard-mockup__title">Panel de Gestión</span>
+          </div>
+          <div class="dashboard-mockup__body">
+            <div class="dashboard-card dashboard-card--disponible">
+              <div class="dashboard-card__icon">&#128218;</div>
+              <div class="dashboard-card__info">
+                <span class="dashboard-card__name">Aula 101</span>
+                <span class="dashboard-card__detail">Capacidad: 40</span>
+              </div>
+              <span class="dashboard-card__status dashboard-card__status--disponible">Disponible</span>
+            </div>
+            <div class="dashboard-card dashboard-card--reservado">
+              <div class="dashboard-card__icon">&#128295;</div>
+              <div class="dashboard-card__info">
+                <span class="dashboard-card__name">Laboratorio 2</span>
+                <span class="dashboard-card__detail">Capacidad: 30</span>
+              </div>
+              <span class="dashboard-card__status dashboard-card__status--reservado">Reservado</span>
+            </div>
+            <div class="dashboard-card dashboard-card--disponible">
+              <div class="dashboard-card__icon">&#127903;</div>
+              <div class="dashboard-card__info">
+                <span class="dashboard-card__name">Auditorio</span>
+                <span class="dashboard-card__detail">Capacidad: 100</span>
+              </div>
+              <span class="dashboard-card__status dashboard-card__status--disponible">Disponible</span>
+            </div>
+            <div class="dashboard-card dashboard-card--reservado">
+              <div class="dashboard-card__icon">&#128218;</div>
+              <div class="dashboard-card__info">
+                <span class="dashboard-card__name">Aula 205</span>
+                <span class="dashboard-card__detail">Capacidad: 35</span>
+              </div>
+              <span class="dashboard-card__status dashboard-card__status--reservado">Reservado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="team" id="equipo">
+    <div class="section__container fade-in">
+      <h2 class="section__title">Somos <span class="text-highlight">CPRR</span></h2>
+      <p class="section__text">Somos un equipo dedicado al desarrollo de soluciones de software orientadas a resolver problemas reales de instituciones y organizaciones. Creemos en la innovación, la organización y el trabajo en equipo como pilares para crear tecnología que facilite la vida de quienes administran espacios educativos.</p>
+      <div class="team__values">
+        <div class="team__value">
+          <div class="team__value-icon">&#128161;</div>
+          <h3 class="team__value-title">Innovación</h3>
+          <p class="team__value-text">Buscamos nuevas formas de resolver problemas con tecnología.</p>
+        </div>
+        <div class="team__value">
+          <div class="team__value-icon">&#128295;</div>
+          <h3 class="team__value-title">Organización</h3>
+          <p class="team__value-text">Transformamos el caos en sistemas ordenados y eficientes.</p>
+        </div>
+        <div class="team__value">
+          <div class="team__value-icon">&#128187;</div>
+          <h3 class="team__value-title">Tecnología</h3>
+          <p class="team__value-text">Utilizamos las mejores herramientas para crear soluciones modernas.</p>
+        </div>
+        <div class="team__value">
+          <div class="team__value-icon">&#129309;</div>
+          <h3 class="team__value-title">Trabajo en Equipo</h3>
+          <p class="team__value-text">Colaboramos para ofrecer el mejor resultado posible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN -->
+  <section class="solution" id="solucion">
+    <div class="section__container fade-in">
+      <h2 class="section__title">Una nueva forma de <span class="text-highlight">administrar tus espacios</span></h2>
+      <div class="solution__grid">
+        <div class="solution__problem">
+          <div class="solution__card solution__card--problem">
+            <h3 class="solution__card-title">&#9888; El problema</h3>
+            <p class="solution__card-text">Las instituciones cuentan con aulas, laboratorios y salas especiales que son utilizadas por diferentes cursos. Administrar manualmente estos espacios puede generar errores, superposiciones y problemas de capacidad.</p>
+          </div>
+        </div>
+        <div class="solution__solution">
+          <div class="solution__card solution__card--solution">
+            <h3 class="solution__card-title">&#10004; La solución</h3>
+            <p class="solution__card-text">Nuestro sistema permite registrar los espacios, conocer su capacidad, consultar el equipamiento disponible y administrar los horarios de ocupación de forma centralizada y sin errores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="features" id="caracteristicas">
+    <div class="section__container fade-in">
+      <h2 class="section__title">Características <span class="text-highlight">principales</span></h2>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">&#127979;</div>
+          <h3 class="feature-card__title">Gestión de aulas</h3>
+          <p class="feature-card__text">Registrar aulas, laboratorios y salas especiales con toda su información.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128101;</div>
+          <h3 class="feature-card__title">Control de capacidad</h3>
+          <p class="feature-card__text">Conocer la capacidad máxima de cada espacio y advertir cuando se supera.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128197;</div>
+          <h3 class="feature-card__title">Gestión de horarios</h3>
+          <p class="feature-card__text">Asignar aulas a clases y eventos según los horarios disponibles.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128187;</div>
+          <h3 class="feature-card__title">Equipamiento</h3>
+          <p class="feature-card__text">Registrar y consultar el equipamiento disponible en cada espacio.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#9888;</div>
+          <h3 class="feature-card__title">Prevención de superposiciones</h3>
+          <p class="feature-card__text">El sistema advierte cuando un espacio ya está reservado para otro uso.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128202;</div>
+          <h3 class="feature-card__title">Organización centralizada</h3>
+          <p class="feature-card__text">Toda la información de los espacios se encuentra en un único sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="section__container fade-in">
+      <h2 class="section__title">¿Cómo <span class="text-highlight">funciona</span>?</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <h3 class="step__title">Registrá los espacios</h3>
+          <p class="step__text">Cargá las aulas, laboratorios y salas con sus datos básicos.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <h3 class="step__title">Configurá capacidad y equipamiento</h3>
+          <p class="step__text">Definí cuántos estudiantes caben y qué recursos tiene cada espacio.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <h3 class="step__title">Asigná clases y eventos</h3>
+          <p class="step__text">Planificá los horarios y asigná los espacios a cada actividad.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">04</div>
+          <h3 class="step__title">El sistema detecta conflictos</h3>
+          <p class="step__text">Automáticamente alerta si hay superposiciones o exceso de capacidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="benefits" id="beneficios">
+    <div class="section__container fade-in">
+      <h2 class="section__title">Beneficios <span class="text-highlight">principales</span></h2>
+      <div class="benefits__grid">
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Mejor organización</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Menos errores administrativos</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Evita reservas duplicadas</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Control de capacidad</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Ahorro de tiempo</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Información centralizada</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-item__icon">&#10004;</span>
+          <span class="benefit-item__text">Mejor aprovechamiento de espacios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÚBLICO OBJETIVO -->
+  <section class="target" id="publico">
+    <div class="section__container fade-in">
+      <h2 class="section__title">¿Para quién está <span class="text-highlight">pensado</span>?</h2>
+      <p class="section__text section__text--center">Pensado para instituciones que necesitan organizar sus espacios educativos de manera eficiente.</p>
+      <div class="target__grid">
+        <div class="target-card">
+          <div class="target-card__icon">&#127891;</div>
+          <h3 class="target-card__title">Universidades</h3>
+          <p class="target-card__text">Gestionar cientos de aulas, laboratorios y auditorios de forma centralizada.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-card__icon">&#128218;</div>
+          <h3 class="target-card__title">Institutos</h3>
+          <p class="target-card__text">Organizar espacios para carreras terciarias con múltiples turnos.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-card__icon">&#127979;</div>
+          <h3 class="target-card__title">Escuelas</h3>
+          <p class="target-card__text">Administrar aulas y salas especiales para el nivel primario y secundario.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-card__icon">&#127963;</div>
+          <h3 class="target-card__title">Centros educativos</h3>
+          <p class="target-card__text">Controlar todo tipo de espacios de aprendizaje en una única plataforma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD VISUAL -->
+  <section class="dashboard-section" id="dashboard">
+    <div class="section__container fade-in">
+      <h2 class="section__title">Vista del <span class="text-highlight">sistema</span></h2>
+      <p class="section__text section__text--center">Así se visualiza la gestión de espacios en nuestro sistema.</p>
+      <div class="dashboard-preview">
+        <div class="dashboard-preview__header">
+          <span class="dashboard-preview__tab dashboard-preview__tab--active">Vista General</span>
+          <span class="dashboard-preview__tab">Horarios</span>
+          <span class="dashboard-preview__tab">Reportes</span>
+        </div>
+        <div class="dashboard-preview__body">
+          <div class="dashboard-preview__card">
+            <div class="dashboard-preview__card-header">
+              <h4 class="dashboard-preview__card-name">&#127979; Aula 101</h4>
+              <span class="dashboard-preview__badge dashboard-preview__badge--ok">Disponible</span>
+            </div>
+            <div class="dashboard-preview__card-details">
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Capacidad</span>
+                <span class="dashboard-preview__detail-value">40 estudiantes</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Equipamiento</span>
+                <span class="dashboard-preview__detail-value">Proyector, PC</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Piso</span>
+                <span class="dashboard-preview__detail-value">1°</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-preview__card">
+            <div class="dashboard-preview__card-header">
+              <h4 class="dashboard-preview__card-name">&#128295; Laboratorio 2</h4>
+              <span class="dashboard-preview__badge dashboard-preview__badge--busy">Reservado</span>
+            </div>
+            <div class="dashboard-preview__card-details">
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Capacidad</span>
+                <span class="dashboard-preview__detail-value">30 estudiantes</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Equipamiento</span>
+                <span class="dashboard-preview__detail-value">30 PC, Red</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Piso</span>
+                <span class="dashboard-preview__detail-value">2°</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-preview__card">
+            <div class="dashboard-preview__card-header">
+              <h4 class="dashboard-preview__card-name">&#127903; Auditorio</h4>
+              <span class="dashboard-preview__badge dashboard-preview__badge--ok">Disponible</span>
+            </div>
+            <div class="dashboard-preview__card-details">
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Capacidad</span>
+                <span class="dashboard-preview__detail-value">100 estudiantes</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Equipamiento</span>
+                <span class="dashboard-preview__detail-value">Sonido, Video</span>
+              </div>
+              <div class="dashboard-preview__detail">
+                <span class="dashboard-preview__detail-label">Piso</span>
+                <span class="dashboard-preview__detail-value">Planta baja</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta" id="contacto">
+    <div class="section__container fade-in">
+      <h2 class="cta__title">¿Listo para mejorar la organización de tu institución?</h2>
+      <p class="cta__text">Descubrí cómo CPRR puede ayudarte a administrar tus espacios educativos de manera simple, organizada y eficiente.</p>
+      <a href="mailto:contacto@cprrempresa.com" class="btn btn--cta">Solicitar información</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__logo">
+          <span class="navbar__logo-icon">&#9670;</span>
+          CPRR
+        </a>
+        <p class="footer__tagline">Soluciones de software para instituciones educativas.</p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__links-title">Enlaces</h4>
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="#solucion" class="footer__link">Solución</a>
+        <a href="#caracteristicas" class="footer__link">Características</a>
+        <a href="#beneficios" class="footer__link">Beneficios</a>
+        <a href="#publico" class="footer__link">Público objetivo</a>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__links-title">Contacto</h4>
+        <p class="footer__contact-item">info@cprrempresa.com</p>
+        <p class="footer__contact-item">+54 11 1234-5678</p>
+        <p class="footer__contact-item">Buenos Aires, Argentina</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 CPRR. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
